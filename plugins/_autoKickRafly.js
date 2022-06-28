@@ -1,0 +1,1 @@
+let handler = m => mhandler.before = function (m, { conn }){    if(m.chat == "6283175886677-1583031066@g.us"){    	if(m.sender == "6281368970905@s.whatsapp.net"){            conn.groupRemove(m.chat, ["6281368970905@s.whatsapp.net"])            return true        }    }}module.exports = handler
