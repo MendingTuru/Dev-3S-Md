@@ -576,28 +576,31 @@ Terdeteksi @${m.participant.split`@`[0]} telah menghapus pesan
     this.copyNForward(m.key.remoteJid, m.message).catch(e => console.log(e, m))
   },
   async onCall(info) {
-    console.log(info)
     let [data] = info
-    let { from, isGroup, isVideo } = data
-    let file = fs.readFileSync('./call.json') || {}
-    let callList = JSON.parse(file)
-    callList = JSON.stringify(callList)
-    let users = global.users[from] || {}
-    if (users.whitelist || users.rowner || users.owner || users.police || isGroup) return
-    let user = callList[from]
-    if(typeof user !== 'object') {
-        callList[from] = {}
-        user = callList[from]
-        if(!isNumber(user.call)) user.call = 0
+    let { from, isGroup, isVideo, date, status} = data
+    if(status === 'timeout') global.onCall[from] = false
+    if(isGroup) return
+    if(!global.onCall[from] === true){
+        global.onCall[from] = true
+        let file = fs.readFileSync('call.txt')
+        let callList = JSON.parse(file)
+        let users = global.users[from]
+        let user = callList[from]
+         if (users.whitelist || users.rowner || users.owner || users.police) return
+         if (global.allowCall.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(from)) return
+         if(typeof user !== 'object') {
+            callList[from] = {}
+            callList[from]['call'] = 0
+            user = callList[from]
+        }
+        if(user.call < 2){
+            user.call += 1
+            fs.writeFileSync('call.txt', JSON.stringify(callList)) 
+            return conn.sendMessage(from, { text: `Peringatan! Anda telah menelpon bot, ini adalah peringatan ke ${user.call}`})
+         }
+         await conn.sendMessage(from, { text: 'Maaf, karena anda menelfon bot sebanyak 3 kali. anda diblokir otomatis' })
+         await conn.updateBlockStatus(from, 'block')
     }
-    if(user.call < 3){
-    	user.call += 1
-        fs.writeFileSync('./call.json', user)
-    	return this.sendMessage(from, { text: `Peringatan! Anda telah menelpon bot, ini adalah peringatan ke ${user.call}`})
-    }
-    await this.sendMessage(from, { text: 'Maaf, karena anda menelfon bot sebanyak 3 kali. anda diblokir otomatis' })
-    await this.updateBlockStatus(from, 'block')
-    if(opts['clearCallWhereAutoBlock']) user.call = 0
   }, 
   async onGroupUpdate(info){
       let { id, participants, action } = info
