@@ -9,7 +9,10 @@ In Project:
 - Werewolf
 - Presence Update
 - Pokemon
+- Fish
+- Emoji unicode
 
 Bug Found:
 - Mendapatkan dua event call saat satu telpon
 - Bot tidak respon saat lama tidak ada pesan
+- Audio tidak ada suara
