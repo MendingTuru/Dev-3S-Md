@@ -597,9 +597,12 @@ Terdeteksi @${m.participant.split`@`[0]} telah menghapus pesan
             user.call += 1
             fs.writeFileSync('call.txt', JSON.stringify(callList)) 
             return conn.sendMessage(from, { text: `Peringatan! Anda telah menelpon bot, ini adalah peringatan ke ${user.call}`})
-         }
-         await conn.sendMessage(from, { text: 'Maaf, karena anda menelfon bot sebanyak 3 kali. anda diblokir otomatis' })
-         await conn.updateBlockStatus(from, 'block')
+        }
+        if(user.call > 3){
+            return
+        }
+        await conn.sendMessage(from, { text: 'Maaf, karena anda menelfon bot sebanyak 3 kali. anda diblokir otomatis' })
+        await conn.updateBlockStatus(from, 'block')
     }
   }, 
   async onGroupUpdate(info){
