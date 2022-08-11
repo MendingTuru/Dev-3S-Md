@@ -16,4 +16,6 @@ Bug Found:
 - Mendapatkan dua event call saat satu telpon
 - Bot tidak respon saat lama tidak ada pesan
 
-Budayakan npm update terlebih dahulu sebelum start bot.
+* Budayakan npm update terlebih dahulu sebelum start bot.
+
+* Izin terlebih dahulu jika bukan untuk penggunaan pribadi
