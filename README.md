@@ -15,4 +15,5 @@ In Project:
 Bug Found:
 - Mendapatkan dua event call saat satu telpon
 - Bot tidak respon saat lama tidak ada pesan
-- Audio tidak ada suara
+
+Budayakan npm update terlebih dahulu sebelum start bot.
