@@ -3,7 +3,7 @@
 3S~Bot MD
 
 Untuk bertanya atau melaporkan bug pribadi
-Email: Razen@habustnyeh.xyz
+Email: threesbot2911@gmail.com
 
 In Project:
 - Werewolf
