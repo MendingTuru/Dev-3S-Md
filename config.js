@@ -1,10 +1,10 @@
-global.you = ['6283170404188', '6283175886677', '6282181661561'] // Developer Bot
-global.rowner = [] // Real Owner Bot
-global.owner = [] // Owner Bot
-global.police = [] // Police Bot
-global.mods = []  // Want some help?
-global.prems = [] // Premium user has unlimited limit
-global.helper = []
+global.you = ['6287740530274', '6287832147584', '6287740530274'] // Developer Bot
+global.rowner = ['6287740530274'] // Real Owner Bot
+global.owner = ['6287740530274'] // Owner Bot
+global.police = ['6287740530274'] // Police Bot
+global.mods = ['6287740530274']  // Want some help?
+global.prems = ['6287740530274'] // Premium user has unlimited limit
+global.helper = ['6287740530274']
 global.allowCall = [] // Allow To Call You
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -45,9 +45,9 @@ global.socket = {
 global.useMulti = false //Bug?
 
 // Sticker WM
-global.packname = '3S~Bot'
-global.author = 'ThreeSBot'
-global.wm = '© 3S~Bot'
+global.packname = 'Cʀᴇᴀᴛᴇᴅ Bʏ'
+global.author = '©ᵈʳкσкσ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×'
+global.wm = '© ᵈʳкσкσ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
