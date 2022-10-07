@@ -1,63 +1,42 @@
-let limit = 30
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 const { servers, yta, ytv } = require('../lib/y2mate')
 let handler = async (m, { conn, command, usedPrefix, text, isPrems, isOwner }) => {
-  if (!text) throw `What song are you want find?\n*Example:* ${usedPrefix}play alan walker faded`
+  if (!text) throw `uhm.. cari apa?\n\ncontoh:\n${usedPrefix + command} i see your monster`
   let chat = global.db.data.chats[m.chat]
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
-  if (!vid) throw 'Video/Audio Not Found'
+  if (!vid) throw 'Video/Audio Tidak ditemukan'
   let isVideo = /2$/.test(command)
   let yt = false
   let usedServer = servers[0]
   for (let i in servers) {
     let server = servers[i]
     try {
-      yt = await (isVideo ? ytv : yta)(vid.url, server)
+      yt = await yta(vid.url, server)
+      yt2 = await ytv(vid.url, server)
       usedServer = server
       break
     } catch (e) {
-      m.reply(`Server ${server} error!${servers.length >= i + 1 ? '' : '\ntry another server...'}`)
+      m.reply(`Server ${server} error!${servers.length >= i + 1 ? '' : '\nmencoba server lain...'}`)
     }
   }
-  if (yt === false) throw 'All servers can\'t 😕'
+  if (yt === false) throw 'semua server gagal'
+  if (yt2 === false) throw 'semua server gagal'
   let { dl_link, thumb, title, filesize, filesizeF } = yt
-  let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
-  conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
-*${title}*
-*⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
-
-*📂ukuran video:* ${filesizeF}
-*👉🏻*Source:* ${vid.url}
-*${isLimit ? 'Pakai ': ''}Link:* ${await shortlink(dl_link)}
+  await conn.sendButtonImg(m.chat, await conn.resize(thumb, 280, 210), `
+*Judul:* ${title}
+*Ukuran File Audio:* ${filesizeF}
+*Ukuran File Video:* ${yt2.filesizeF}
 *Server y2mate:* ${usedServer}
-`.trim(), m)
-let _thumb = {}
-try { if (isVideo) _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
-catch (e) { }
-if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /2$/.test(command)), `
-*Title:* ${title}
-*Filesize:* ${filesizeF}
-*Source:* ${vid.url}
-*Server y2mate:* ${usedServer}
-`.trim(), m, false,  {
-  ..._thumb,
-  asDocument: chat.useDocument
-})
+ `.trim(), wm, `🎵 AUDIO ${filesizeF}`, usedPrefix + `yta ${vid.url}`, `📽 VIDEO ${yt2.filesizeF}`, usedPrefix + `yt ${vid.url}`, `🔍 SEARCH`, `.yts ${vid.url}`, m)
 }
-handler.help = ['play', 'play2'].map(v => v + ' <search>')
+handler.help = ['play'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^play2?$/i
-handler.premium = false
-handler.group = true
+handler.command = /^(dj|musik|song|lagu|p(lay)?)$/i
 
-handler.exp = 0
-handler.limit = true
+handler.exp = 3
+handler.limit = false
+handler.register = false
 
 module.exports = handler
-
-async function shortlink(url) {
-isurl = /https?:\/\//.test(url)
-return isurl ? (await require('axios').get('https://tinyurl.com/api-create.php?url='+encodeURIComponent(url))).data : ''
-}
