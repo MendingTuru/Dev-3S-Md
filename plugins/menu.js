@@ -211,144 +211,144 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
               "rows": [
                 {
                   "title": `Menu Utama`,
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? all"
                 },
                  {
                   "title": "Rpg",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? rpg"
                 },
                 {
                   "title": "Daftar",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? daftar"
                 },
                 {
                   "title": "Rules",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? rules"
                 },
                  {
                   "title": "Request Fitur",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? request"
                 },
                 {
                   "title": "Main",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? main"
                 },
                   {
                   "title": "Game",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? game"
                 }, {
                   "title": "Exp & Limit",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? xp"
                 }, {
                   "title": "Sticker",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? sticker"
                 }, 
                 {
                   "title": "Donasi",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? donasi"
                 },
                 {
                   "title": "Kerang Ajaib",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? kerang"
                 }, {
                   "title": "Quotes",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? quotes"
                 }, {
                   "title": "Admin",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? admin"
                 }, {
                   "title": "Grup",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? group"
                 },
                 {
                   "title": "Premium",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? premium"
                 }, {
                   "title": "Internet",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? internet"
                 },
                 {
                   "title": "Anonymous Chat",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                  "rowId": ".? anonymous"
                 },
                 {
                   "title": "Nulis & Logo",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? nulis"
                 }, {
                   "title": "Downloader",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? downloader"
                 }, {
                   "title": "Tools",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? tools"
                 }, {
                   "title": "Fun",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? fun"
                 }, 
                 {
                   "title": "Asupan",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? asupan"
                 },
                 {
                   "title": "Database",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? database"
                 },
                 {
                   "title": "Al-Qur'an",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? quran"
                 },
                 
                 {
                   "title": "Jadi Bot",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? jadibot"
                 },
                    {
                   "title": "Owner",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? owner"
                 },
                 {
                   "title": "Host",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? host"
                 },
                 {
                   "title": "Advanced",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? advanced"
                 },
                 {
                   "title": "Info",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? info"
                 },
                 {
                   "title": "Exp",
-                  "description": "© 𝚇𝚒𝚊𝚘 𝙱𝚢 𝚉𝚎𝚗𝚜𝚜",
+                  "description": "© ᵈʳᴋᴏᴋᴏ ᴘᴀ፝֟፝֟ɴɢᴇʀᴀɴ×፝֟͜×",
                   "rowId": ".? exp"
                 },
               ]
