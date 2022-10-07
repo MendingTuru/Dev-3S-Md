@@ -1,7 +1,7 @@
 {
-    "name": "3S~Bot",
+    "name": "Dev-3S-Md",
     "version": "1.0.2",
-    "description": "3S~Bot Multi Device",
+    "description": "Bot Multi Device",
     "depecrated": false,
     "main": "index.js",
     "directories": {
