@@ -3,7 +3,7 @@
 3S~Bot MD
 
 Untuk bertanya atau melaporkan bug pribadi
-Email: threesbot2911@gmail.com
+Email: pangeran.dwnta01@gmail.com
 
 In Project:
 - Werewolf
