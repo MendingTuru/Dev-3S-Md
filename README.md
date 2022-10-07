@@ -1,5 +1,9 @@
 # Dev-3S-Bot
 
+<p align="center">
+<img src="https://avatars.githubusercontent.com/mendingturu" width="150" height="150"/>
+</p>
+
 3S~Bot MD
 
 Untuk bertanya atau melaporkan bug pribadi
